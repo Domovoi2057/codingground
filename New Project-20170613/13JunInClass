@@ -1,0 +1,30 @@
+#include <iostream>
+#include <stdio.h>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    char gender;
+    int YOB;
+    
+    cout <<"What is the applicant's gender? (M/F):\n";
+    
+    cin >> gender;
+    
+    cout<<"What is the applicant's year of birth? (YYYY format):\n";
+    
+    cin>>YOB;
+    
+    if ((gender == 'F' || (gender == 'f')) && ((YOB >= 1992) && (YOB <= 1997)))
+    {
+        cout<<"Applicant is eligible.\n";
+    }
+    else
+    {
+        cout<<"Applicant is ineligible.\n";
+    }
+   return 0;
+}
+
